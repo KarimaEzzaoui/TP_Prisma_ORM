@@ -1,0 +1,20 @@
+// schema.prisma
+
+// Define the Teacher model
+model Teacher {
+  id: Int      @id @default(autoincrement())
+  name: String
+  age: Int
+  phoneNumber: String
+  address: String
+  numberOfClasses: Int
+}
+
+// Define the Student model
+model Student {
+  id: Int      @id @default(autoincrement())
+  name: String
+  age: Int
+  address: String
+  parentsPhoneNumber: String
+}
